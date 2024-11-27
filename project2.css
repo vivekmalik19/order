@@ -1,0 +1,229 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px;
+  }
+  
+  .navbar .logo h1 {
+    color: white;
+    font-size: 24px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .nav-links a:hover {
+    color: #f0a500;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url(https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_1280.jpg) no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .hero button {
+    background-color: #f0a500;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hero button:hover {
+    background-color: #d17b00;
+  }
+  
+  /* Menu Section */
+  #menu {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #menu h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .menu-item {
+    width: 30%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .menu-item h3 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .menu-item p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .menu-item span {
+    font-size: 22px;
+    color: #f0a500;
+  }
+  
+  /* About Section */
+  #about {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #contact form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #contact input,
+  #contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  #contact button {
+    width: 100%;
+    padding: 15px;
+    background-color: #f0a500;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #contact button:hover {
+    background-color: #d17b00;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .menu-items {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu-item {
+      width: 80%;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav-links {
+      margin-top: 20px;
+      flex-direction: column;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .hero h2 {
+      font-size: 36px;
+    }
+  
+    .hero p {
+      font-size: 20px;
+    }
+  
+    #about p {
+      font-size: 16px;
+    }
+  
+    #contact input,
+    #contact textarea {
+      font-size: 14px;
+    }
+  }
+  
